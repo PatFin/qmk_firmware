@@ -2,73 +2,74 @@
 
 /* Names for the french accentuated characters */
 enum unicode_names {
-                    ag,
-                    ac,
-                    at,
-                    Ag,
-                    Ac,
-                    At,
-                    eg,
-                    et,
-                    ec,
-                    ea,
-                    Eg,
-                    Et,
-                    Ec,
-                    Ea,
-                    ic,
-                    it,
-                    Ic,
-                    It,
-                    oc,
-                    og,
-                    ot,
-                    Oc,
-                    Og,
-                    Ot,
-                    ug,
-                    uc,
-                    ut,
-                    Ug,
-                    Uc,
-                    Ut,
-                    cc,
-                    Cc,
+    ag,
+    ac,
+    at,
+    Ag,
+    Ac,
+    At,
+    eg,
+    et,
+    ec,
+    ea,
+    Eg,
+    Et,
+    Ec,
+    Ea,
+    ic,
+    it,
+    Ic,
+    It,
+    oc,
+    og,
+    ot,
+    Oc,
+    Og,
+    Ot,
+    ug,
+    uc,
+    ut,
+    Ug,
+    Uc,
+    Ut,
+    cc,
+    Cc,
 };
 
 /* Mapping from the names defined above to their unicode value */
-const uint32_t PROGMEM unicode_map[] = {[ag] = 0x00e0, // à
-                                        [ac] = 0x00e2, // â
-                                        [at] = 0x00e4, // ä
-                                        [Ag] = 0x00c0, // À
-                                        [Ac] = 0x00c2, // Â
-                                        [At] = 0x00c4, // Ä
-                                        [eg] = 0x00e8, // è
-                                        [et] = 0x00eb, // ë
-                                        [ec] = 0x00ea, // ê
-                                        [ea] = 0x00e9, // é
-                                        [Eg] = 0x00c8, // È
-                                        [Et] = 0x00cb, // Ë
-                                        [Ec] = 0x00ca, // Ê
-                                        [Ea] = 0x00c9, // É
-                                        [ic] = 0x00ee, // î
-                                        [it] = 0x00ef, // ï
-                                        [Ic] = 0x00ce, // Î
-                                        [It] = 0x00cf, // Î
-                                        [oc] = 0x00f4, // ô
-                                        [og] = 0x00f2, // ò
-                                        [ot] = 0x00f6, // ö
-                                        [Oc] = 0x00d4, // Ô
-                                        [Og] = 0x00d2, // Ò
-                                        [Ot] = 0x00d6, // Ö
-                                        [ug] = 0x00f9, // ù
-                                        [uc] = 0x00fb, // û
-                                        [ut] = 0x00fc, // ü
-                                        [Ug] = 0x00d9, // Ù
-                                        [Uc] = 0x00db, // Û
-                                        [Ut] = 0x00dc, // Ü
-                                        [cc] = 0x00e7, // ç
-                                        [Cc] = 0x00c7, // Ç
+const uint32_t PROGMEM unicode_map[] = {
+    [ag] = 0x00e0, // à
+    [ac] = 0x00e2, // â
+    [at] = 0x00e4, // ä
+    [Ag] = 0x00c0, // À
+    [Ac] = 0x00c2, // Â
+    [At] = 0x00c4, // Ä
+    [eg] = 0x00e8, // è
+    [et] = 0x00eb, // ë
+    [ec] = 0x00ea, // ê
+    [ea] = 0x00e9, // é
+    [Eg] = 0x00c8, // È
+    [Et] = 0x00cb, // Ë
+    [Ec] = 0x00ca, // Ê
+    [Ea] = 0x00c9, // É
+    [ic] = 0x00ee, // î
+    [it] = 0x00ef, // ï
+    [Ic] = 0x00ce, // Î
+    [It] = 0x00cf, // Î
+    [oc] = 0x00f4, // ô
+    [og] = 0x00f2, // ò
+    [ot] = 0x00f6, // ö
+    [Oc] = 0x00d4, // Ô
+    [Og] = 0x00d2, // Ò
+    [Ot] = 0x00d6, // Ö
+    [ug] = 0x00f9, // ù
+    [uc] = 0x00fb, // û
+    [ut] = 0x00fc, // ü
+    [Ug] = 0x00d9, // Ù
+    [Uc] = 0x00db, // Û
+    [Ut] = 0x00dc, // Ü
+    [cc] = 0x00e7, // ç
+    [Cc] = 0x00c7, // Ç
 };
 
 
@@ -96,20 +97,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
    /* Navigation cluster
     * ,-----------------------------------------------------------------------------------.
-    * |      |      |      |      |      |      |      |      |      |      |      |      |
+    * |      |      |      |      |      |      |      |      |      |      |      | Del  |
     * |------+------+------+------+------+------+------+------+------+------+------+------|
-    * |      |      | Home |  Up  | End  |PageUP|      |      |      |      |      |      |
+    * | Tab  |      | Home |  Up  | End  |PageUP|      |      |      |      |      | Bksp |
     * |------+------+------+------+------+-------------+------+------+------+------+------|
-    * |      |      | Left | Down |Right |Pg_DWN|      |      |      |      |      |      |
+    * | Esc  |      | Left | Down |Right |Pg_DWN|      |      |      |      |      |Enter |
     * |------+------+------+------+------+------|------+------+------+------+------+------|
     * | Shift|      |      |      |      |      |      |      |      |      |      |Shift |
     * |------+------+------+------+------+------+------+------+------+------+------+------|
     * | Ctrl |  Fn  |  GUI |L-Alt |      |             |      |Naviga|Mouse |Numpad|R-Ctrl|
     * `-----------------------------------------------------------------------------------'
     */
-    [1] = LAYOUT_preonic_1x2uC(KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                               KC_NO, KC_NO, KC_HOME, KC_UP, KC_END, KC_PGUP, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                               KC_NO, KC_NO, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
+    [1] = LAYOUT_preonic_1x2uC(KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS,
+                               KC_TRNS, KC_NO, KC_HOME, KC_UP, KC_END, KC_PGUP, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS,
+                               KC_TRNS, KC_NO, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS,
                                KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS,
                                KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
 
@@ -135,7 +136,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     * ,-----------------------------------------------------------------------------------.
     * | F12  |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |  F7  |  F8  |  F9  | F10  | F11  |
     * |------+------+------+------+------+------+------+------+------+------+------+------|
-    * |      | Mute |VolDwn|VolUp | Prev | Play | Next |      |      |Brigt+|Brigt-|      |
+    * |      | Mute | Vol- | Vol+ | Prev | Play | Next |      |      |Brigt-|Brigt+|      |
     * |------+------+------+------+------+-------------+------+------+------+------+------|
     * | Caps |      |      |      |      |      |      |      |      |      |      |      |
     * |------+------+------+------+------+------|------+------+------+------+------+------|
@@ -151,7 +152,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                KC_NO, KC_TRNS, KC_NO, LM(3, MOD_LALT), KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO),
    /* Raised layer: symbols
     * ,-----------------------------------------------------------------------------------.
-    * |      |   !  |  @   |  #   |  $   |  %   |  ^   |  &   |  *   |  (   |   )  |      |
+    * |  ~   |  !   |  @   |  #   |  $   |  %   |  ^   |  &   |  *   |  (   |   )  |      |
     * |------+------+------+------+------+------+------+------+------+------+------+------|
     * |      |      |      |  =   |      |      |  -   |  _   |   +  |  {   |   }  |      |
     * |------+------+------+------+------+-------------+------+------+------+------+------|
@@ -162,13 +163,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     * |      |      |      |      |      |             |Raise |      |      |      |      |
     * `-----------------------------------------------------------------------------------'
     */
-	[4] = LAYOUT_preonic_1x2uC(KC_NO, KC_EXLM, KC_AT, KC_HASH, KC_DLR, KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_NO,
+	[4] = LAYOUT_preonic_1x2uC(KC_TILD, KC_EXLM, KC_AT, KC_HASH, KC_DLR, KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_NO,
                                KC_NO, KC_NO, KC_NO, KC_EQL, KC_NO, KC_NO, KC_PMNS, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, KC_NO,
                                KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_PSLS, KC_PIPE, KC_BSLS, KC_LBRC, KC_RBRC, KC_NO,
                                KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_LT, KC_GT, KC_QUES, KC_NO, KC_NO,
                                KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO, KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO),
 
-   /* Lowered layer: French accentuated characters.
+   /*
+    * Lowered layer: French accentuated characters.
     * Uppercase letters are achived by pressing and keepin the shift key pressed before pressing
     * the "lower" key and pressing the desired character.
     *
