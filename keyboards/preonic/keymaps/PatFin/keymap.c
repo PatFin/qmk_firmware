@@ -99,20 +99,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     * ,-----------------------------------------------------------------------------------.
     * |      |      |      |      |      |      |      |      |      |      |      | Del  |
     * |------+------+------+------+------+------+------+------+------+------+------+------|
-    * | Tab  |      | Home |  Up  | End  |PageUP|      |      |      |      |      | Bksp |
+    * | Tab  |      | Home |  Up  | End  |PageUP|      |   7  |  8   |  9   |      | Bksp |
     * |------+------+------+------+------+-------------+------+------+------+------+------|
-    * | Esc  |      | Left | Down |Right |Pg_DWN|      |      |      |      |      |Enter |
+    * | Esc  |      | Left | Down |Right |Pg_DWN|      |   4  |  5   |  6   |      |Enter |
     * |------+------+------+------+------+------|------+------+------+------+------+------|
-    * | Shift|      |      |      |      |      |      |      |      |      |      |Shift |
+    * | Shift|      |      |      |      |      |      |   1  |  2   |  3   |      |Shift |
     * |------+------+------+------+------+------+------+------+------+------+------+------|
-    * | Ctrl |  Fn  |  GUI |L-Alt |      |             |      |Naviga|Mouse |Numpad|R-Ctrl|
+    * | Ctrl |  Fn  |  GUI |L-Alt |      |             |   0  |Naviga|Mouse |Numpad|R-Ctrl|
     * `-----------------------------------------------------------------------------------'
     */
     [1] = LAYOUT_preonic_1x2uC(KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS,
-                               KC_TRNS, KC_NO, KC_HOME, KC_UP, KC_END, KC_PGUP, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS,
-                               KC_TRNS, KC_NO, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS,
-                               KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS,
-                               KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
+                               KC_TRNS, KC_NO, KC_HOME, KC_UP, KC_END, KC_PGUP, KC_NO, KC_7, KC_8, KC_9, KC_NO, KC_TRNS,
+                               KC_TRNS, KC_NO, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, KC_NO, KC_4, KC_5, KC_6, KC_NO, KC_TRNS,
+                               KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_1, KC_2, KC_3, KC_NO, KC_TRNS,
+                               KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_NO, KC_NO, KC_0, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
 
    /* Mouse layer
     * ,-----------------------------------------------------------------------------------.
@@ -152,22 +152,22 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                KC_NO, KC_TRNS, KC_NO, LM(3, MOD_LALT), KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO),
    /* Raised layer: symbols
     * ,-----------------------------------------------------------------------------------.
-    * |  ~   |  !   |  @   |  #   |  $   |  %   |  ^   |  &   |  *   |  (   |   )  |      |
+    * |  ~   |  !   |  @   |  #   |      |  %   |  ^   |  &   |  *   |      |      |      |
     * |------+------+------+------+------+------+------+------+------+------+------+------|
-    * |      |      |      |  =   |      |      |  -   |  _   |   +  |  {   |   }  |      |
+    * |      |      |      |  =   |      |  (   |  )   |  _   |   |  |  ^   |      |      |
     * |------+------+------+------+------+-------------+------+------+------+------+------|
-    * |      |      |      |      |      |      |  /   |  |   |   \  |  [   |   ]  |      |
+    * |      |  +   |   -  |  /   |  *   |  {   |  }   |  /   |   \  |  $   |  %   |      |
     * |------+------+------+------+------+------|------+------+------+------+------+------|
-    * |      |      |      |      |      |      |      |      |   <  |  >   |   ?  |      |
+    * |      |      |      |      |      |  [   |  ]   |      |      |      |      |      |
     * |------+------+------+------+------+------+------+------+------+------+------+------|
     * |      |      |      |      |      |             |Raise |      |      |      |      |
     * `-----------------------------------------------------------------------------------'
     */
-	[4] = LAYOUT_preonic_1x2uC(KC_TILD, KC_EXLM, KC_AT, KC_HASH, KC_DLR, KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_NO,
-                               KC_NO, KC_NO, KC_NO, KC_EQL, KC_NO, KC_NO, KC_PMNS, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, KC_NO,
-                               KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_PSLS, KC_PIPE, KC_BSLS, KC_LBRC, KC_RBRC, KC_NO,
-                               KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_LT, KC_GT, KC_QUES, KC_NO, KC_NO,
-                               KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO, KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO),
+	[4] = LAYOUT_preonic_1x2uC(KC_TILD, KC_EXLM,   KC_AT, KC_HASH, KC_NO,   KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_NO,
+                               KC_NO,   KC_EXLM,   KC_AT,  KC_EQL, KC_NO,   KC_LPRN, KC_RPRN, KC_UNDS, KC_PIPE, KC_CIRC,   KC_NO, KC_NO,
+                               KC_NO,   KC_PLUS, KC_PMNS, KC_PSLS, KC_ASTR, KC_LCBR, KC_RCBR, KC_PSLS, KC_BSLS,  KC_DLR, KC_PERC, KC_NO,
+                               KC_NO,     KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_LBRC, KC_RBRC,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO,
+                               KC_NO,     KC_NO,   KC_NO,   KC_NO, KC_NO,              KC_NO, KC_TRNS,   KC_NO,   KC_NO,   KC_NO, KC_NO),
 
    /*
     * Lowered layer: French accentuated characters.
