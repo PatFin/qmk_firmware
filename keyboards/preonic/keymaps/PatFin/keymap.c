@@ -154,9 +154,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     * ,-----------------------------------------------------------------------------------.
     * |  ~   |  !   |  @   |  #   |      |  %   |  ^   |  &   |  *   |      |      |      |
     * |------+------+------+------+------+------+------+------+------+------+------+------|
-    * |      |      |      |  =   |      |  (   |  )   |  _   |   |  |  ^   |      |      |
+    * |      |      |      |  =   |      |  {   |  }   |  _   |   |  |  ^   |      |      |
     * |------+------+------+------+------+-------------+------+------+------+------+------|
-    * |      |  +   |   -  |  /   |  *   |  {   |  }   |  /   |   \  |  $   |  %   |      |
+    * |      |  +   |   -  |  /   |  *   |  (   |  )   |  /   |   \  |  $   |  %   |      |
     * |------+------+------+------+------+------|------+------+------+------+------+------|
     * |      |      |      |      |      |  [   |  ]   |      |      |      |      |      |
     * |------+------+------+------+------+------+------+------+------+------+------+------|
@@ -164,8 +164,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     * `-----------------------------------------------------------------------------------'
     */
 	[4] = LAYOUT_preonic_1x2uC(KC_TILD, KC_EXLM,   KC_AT, KC_HASH, KC_NO,   KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_NO,
-                               KC_NO,   KC_EXLM,   KC_AT,  KC_EQL, KC_NO,   KC_LPRN, KC_RPRN, KC_UNDS, KC_PIPE, KC_CIRC,   KC_NO, KC_NO,
-                               KC_NO,   KC_PLUS, KC_PMNS, KC_PSLS, KC_ASTR, KC_LCBR, KC_RCBR, KC_PSLS, KC_BSLS,  KC_DLR, KC_PERC, KC_NO,
+                               KC_NO,   KC_EXLM,   KC_AT,  KC_EQL, KC_NO,   KC_LCBR, KC_RCBR, KC_UNDS, KC_PIPE, KC_CIRC,   KC_NO, KC_NO,
+                               KC_NO,   KC_PLUS, KC_PMNS, KC_PSLS, KC_ASTR, KC_LPRN, KC_RPRN, KC_PSLS, KC_BSLS,  KC_DLR, KC_PERC, KC_NO,
                                KC_NO,     KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_LBRC, KC_RBRC,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO,
                                KC_NO,     KC_NO,   KC_NO,   KC_NO, KC_NO,              KC_NO, KC_TRNS,   KC_NO,   KC_NO,   KC_NO, KC_NO),
 
