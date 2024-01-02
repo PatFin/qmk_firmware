@@ -213,7 +213,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     * `-----------------------------------------------------------------------------------'
     */
 	[5] = LAYOUT_preonic_1x2uC(KC_NO, KC_NO, KC_NO, KC_DQUO, KC_QUOT, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                               UC_MOD, KC_NO, XP(ea,Ea), XP(ec,Ec), XP(eg,Eg), KC_NO, KC_NO, XP(uc,Uc), XP(ic,Ic), XP(oc,Oc), XP(og,Og), KC_NO,
+                               UC_NEXT, KC_NO, XP(ea,Ea), XP(ec,Ec), XP(eg,Eg), KC_NO, KC_NO, XP(uc,Uc), XP(ic,Ic), XP(oc,Oc), XP(og,Og), KC_NO,
                                KC_CAPS, XP(ac,Ac), XP(ag,Ag), XP(et,Et), KC_NO, KC_NO, KC_NO, XP(ut,Ut), XP(it,It), XP(ot,Ot), KC_NO, KC_NO,
                                KC_TRNS, XP(at,At), KC_NO, XP(cc, Cc), KC_NO, KC_NO, KC_NO, XP(ug,Ug), KC_NO, KC_NO, KC_NO, KC_TRNS,
                                KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO),
@@ -223,20 +223,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     * The navigation cluster with the arrow keys on keys ESDF present in layer "navigation"
     * are also present for easy navigation in spreadsheets.
     * ,-----------------------------------------------------------------------------------.
-    * |      |      |      |   "  |   '  |   %  |   =  |   /  |   *  |  -   |      | Supr |
+    * |      |      |      |   "  |   '  |   %  |   =  |  VN  |      |      |      | Supr |
     * |------+------+------+------+------+------+------+------+------+------+------+------|
-    * | Tab  |      | Home |  Up  |  End |PageUp|      |   1  |   2  |   3  |   4  | Del  |
+    * | Tab  |      | Home |  Up  |  End |PageUp|      |   7  |   8  |   9  |      | Del  |
     * |------+------+------+------+------+------+------+------+------+------+------+------|
-    * | Esc  |      | Left | Down | Right|PgDown|      |   5  |   6  |   7  |   8  |Enter |
+    * | Esc  |      | Left | Down | Right|PgDown|      |   4  |   5  |   6  |      |Enter |
     * |------+------+------+------+------+------|------+------+------+------+------+------|
-    * |Shift |      |      |      |      |      |      |   9  |   0  |   .  |      |Shift |
+    * |Shift |      |      |      |      |      |      |   1  |   2  |   3  |      |Shift |
     * |------+------+------+------+------+------+------+------+------+------+------+------|
-    * | Ctrl |      |      |      |NumPad|             |      |      |      |      | Ctrl |
+    * | Ctrl |      |      |      |NumPad|             |      |   0  |      |      | Ctrl |
     * `-----------------------------------------------------------------------------------'
     */
-    [6] = LAYOUT_preonic_1x2uC(KC_NO, KC_NO, KC_NO, KC_DQUO, KC_QUOT, KC_PERC, KC_PEQL, KC_PSLS, KC_PAST, KC_PMNS, KC_NO, KC_TRNS,
-                               KC_TRNS, KC_NO, KC_HOME, KC_UP, KC_END, KC_PGUP, KC_NO, KC_P1, KC_P2, KC_P3, KC_P4, KC_TRNS,
-                               KC_TRNS, KC_NO, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, KC_NO, KC_P5, KC_P6, KC_P7, KC_P8, KC_TRNS,
-                               KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_P9, KC_P0, KC_PDOT, KC_NO, KC_TRNS,
-                               KC_TRNS, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO)
+    [6] = LAYOUT_preonic_1x2uC(KC_NO, KC_NO, KC_NO, KC_DQUO, KC_QUOT, KC_PERC, KC_PEQL, KC_NUM_LOCK, KC_NO, KC_NO, KC_NO, KC_TRNS,
+                               KC_TRNS, KC_NO, KC_HOME, KC_UP, KC_END, KC_PGUP, KC_NO, KC_P7, KC_P8, KC_P9, KC_NO, KC_TRNS,
+                               KC_TRNS, KC_NO, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, KC_NO, KC_P4, KC_P5, KC_P6, KC_NO, KC_TRNS,
+                               KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_P1, KC_P2, KC_P3, KC_NO, KC_TRNS,
+                               KC_TRNS, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO, KC_NO, KC_P0, KC_NO, KC_NO, KC_TRNS)
 };

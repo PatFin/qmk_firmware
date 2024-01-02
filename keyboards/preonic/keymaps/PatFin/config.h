@@ -47,7 +47,7 @@
  * https://beta.docs.qmk.fm/using-qmk/software-features/feature_unicode#2-input-modes-id-input-modes
  */
 //#define UNICODE_SELECTED_MODES UC_LNX, UC_WINC, UC_MAC // Use this if you use Windows, MAC, and Linux
-#define UNICODE_SELECTED_MODES UC_LNX, UC_WINC           // Use this if you use Windows and Linux
+#define UNICODE_SELECTED_MODES UNICODE_MODE_LINUX, UNICODE_MODE_WINCOMPOSE
 //#define UNICODE_SELECTED_MODES UC_WINC, UC_MAC         // Use this if you use Windows and MAC
 //#define UNICODE_SELECTED_MODES UC_LNX, UC_MAC          // Use this if you use MAC and Linux
 //#define UNICODE_SELECTED_MODES UC_WINC                 // Use this if you only use Windows
