@@ -213,9 +213,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     * `-----------------------------------------------------------------------------------'
     */
 	[5] = LAYOUT_preonic_1x2uC(KC_NO, KC_NO, KC_NO, KC_DQUO, KC_QUOT, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-                               UC_NEXT, KC_NO, XP(ea,Ea), XP(ec,Ec), XP(eg,Eg), KC_NO, KC_NO, XP(uc,Uc), XP(ic,Ic), XP(oc,Oc), XP(og,Og), KC_NO,
-                               KC_CAPS, XP(ac,Ac), XP(ag,Ag), XP(et,Et), KC_NO, KC_NO, KC_NO, XP(ut,Ut), XP(it,It), XP(ot,Ot), KC_NO, KC_NO,
-                               KC_TRNS, XP(at,At), KC_NO, XP(cc, Cc), KC_NO, KC_NO, KC_NO, XP(ug,Ug), KC_NO, KC_NO, KC_NO, KC_TRNS,
+                               UC_NEXT, KC_NO, UP(ea,Ea), UP(ec,Ec), UP(eg,Eg), KC_NO, KC_NO, UP(uc,Uc), UP(ic,Ic), UP(oc,Oc), UP(og,Og), KC_NO,
+                               KC_CAPS, UP(ac,Ac), UP(ag,Ag), UP(et,Et), KC_NO, KC_NO, KC_NO, UP(ut,Ut), UP(it,It), UP(ot,Ot), KC_NO, KC_NO,
+                               KC_TRNS, UP(at,At), KC_NO, UP(cc, Cc), KC_NO, KC_NO, KC_NO, UP(ug,Ug), KC_NO, KC_NO, KC_NO, KC_TRNS,
                                KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_TRNS, KC_NO),
 
    /* Numpad layer:
